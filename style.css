@@ -32,6 +32,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 32px;
             padding: 40px;
+            margin: 20px 0;
             width: 90%;
             max-width: 900px;
             display: grid;
@@ -98,5 +99,6 @@
         }
 
         @media (max-width: 768px) {
-            .dashboard-card { grid-template-columns: 1fr; gap: 30px; padding: 30px; }
+            .dashboard-card { grid-template-columns: 1fr; gap: 10px; padding: 20px; margin: auto;}
+            body{overflow: scroll;}
         }
