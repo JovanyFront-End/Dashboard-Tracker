@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Smart Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" type="image/png" href="icons8-dashboard-layout-48.png">
+</head>
+<body>
+
+    <div class="dashboard-card">
+        <div class="controls">
+            <div class="brand">JOVANY<span>.</span></div>
+            
+            <div class="input-group">
+                <label>Monthly Income</label>
+                <input type="number" id="income" placeholder="0.00">
+            </div>
+
+            <div class="input-group">
+                <label>Monthly Expenses</label>
+                <input type="number" id="expense" placeholder="0.00">
+            </div>
+
+            <div class="input-group">
+                <label>Savings Target</label>
+                <input type="number" id="target" placeholder="0.00">
+            </div>
+        </div>
+
+        <div class="display-panel">
+            <div class="main-stat">
+                <div class="stat-label">Net Balance</div>
+                <div class="stat-value" id="balanceDisplay">$0</div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-header">
+                    <span>Target Progress</span>
+                    <span id="percentDisplay">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
